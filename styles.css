@@ -5,8 +5,10 @@ body{
 section{
     display: flex;
     flex-direction: column;
-    margin-top: -55px;   
-    margin-left: 40px;  
+    margin-top: -30px;  
+}
+.first{
+    display: flex;
 }
 .logo{
     width: 127px;
@@ -22,6 +24,7 @@ header{
     border-bottom: 1px solid rgba(198, 198, 198, 1);
     margin-bottom: 11px;
 }
+
 #avartar-two, #avartar-three, #avartar-four{
  height: 34px;
  width: 34px;
@@ -29,12 +32,10 @@ header{
 }
 #section, #section-two, #section-three{
     font-size: 13px;
-    margin: 0;
 }
 #country, #country-two, #country-three{
-    font-size: 12px;
-    margin: 0;
-    margin-top: -30px;
+    font-size: 12px; 
+     margin-top: -40px;
 }
 #post-one, #post-two, #post-three{
     height: 375px;
@@ -45,7 +46,7 @@ header{
     background:rgba(255, 255, 255, 1);
     height: 300px;
     width: 375px;
-    margin-top: -4px;
+    margin: 0;
 }
 #heart-icon, #heart2-icon, #heart3-icon{
     height: 22px;
