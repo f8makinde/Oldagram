@@ -77,9 +77,13 @@ function allImages(){
     document.getElementById("avartar-three").src = `${posts[1].avatar}`
     document.getElementById("post-two").src = `${posts[1].post}`
     document.getElementById("heart2-icon").src = `${posts[1]["heart-icon"]}`
-    document.getElementById("comment2-icon").src = `${posts[0]["comment-icon"]}`
-    document.getElementById("dm2-icon").src = `${posts[0]["dm-icon"]}`;
+    document.getElementById("comment2-icon").src = `${posts[1]["comment-icon"]}`
+    document.getElementById("dm2-icon").src = `${posts[1]["dm-icon"]}`;
     document.getElementById("avartar-four").src = `${posts[2].avatar}`
+    document.getElementById("post-three").src = `${posts[2].post}`;
+    document.getElementById("heart3-icon").src = `${posts[1]["heart-icon"]}`
+    document.getElementById("comment3-icon").src = `${posts[1]["comment-icon"]}`
+    document.getElementById("dm3-icon").src = `${posts[1]["dm-icon"]}`;
     member();
 }
 function likeComment(){
