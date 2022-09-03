@@ -6,7 +6,7 @@ const posts = [
         avatar: "images/avatar-vangogh.jpg",
         post: "images/post-vangogh.jpg",
         comment: "just took a few mushrooms lol",
-        likes: 21,
+        likes: "",
         "heart-icon": "images/icon-heart.png",
         "comment-icon": "images/icon-comment.png",
         "dm-icon": "images/icon-dm.png"
@@ -18,7 +18,7 @@ const posts = [
         avatar: "images/avatar-courbet.jpg",
         post: "images/post-courbet.jpg",
         comment: "i'm feelin a bit stressed tbh",
-        likes: 4,
+        likes: "",
         "heart-icon": "images/icon-heart.png",
         "comment-icon": "images/icon-comment.png",
         "dm-icon": "images/icon-dm.png"
@@ -30,7 +30,7 @@ const posts = [
         avatar: "images/avatar-ducreux.jpg",
         post: "images/post-ducreux.jpg",
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
-        likes: 152,
+        likes: "",
         "heart-icon": "images/icon-heart.png",
         "comment-icon": "images/icon-comment.png",
         "dm-icon": "images/icon-dm.png"
@@ -42,11 +42,14 @@ let numberOfLikes = document.getElementById("likes");
 let textEl = document.getElementById("txt");
 let sectionTwoEl = document.getElementById("section-two");
 let countryTwoEl = document.getElementById("country-two");
-let likes2El = document.getElementById("likes-2");
+let likesEl = document.getElementById("likes-2");
 let text2El = document.getElementById("txt-2")
 let sectionThreeEl = document.getElementById("section-three");
 let countryThreeEl = document.getElementById("country-three");
-let likes3El = document.getElementById("likes-3");
+ let heart = document.getElementById("heart-icon")
+ let heart2 = document.getElementById("heart2-icon");
+ let heart3 = document.getElementById("heart3-icon")
+let likes2El = document.getElementById("likes-3");
 let text3El = document.getElementById("txt-3")
 let name = "";
 let nation = ""
@@ -89,18 +92,36 @@ function allImages(){
     member();
 }
 function likeComment(){
-    likes = `<p>${posts[0].likes} likes</p>`
-    numberOfLikes.innerHTML = likes;
     comments = `<span><p><strong>${posts[0].name}</strong> ${posts[0].comment}</p></span>`
     textEl.innerHTML = comments;
+    likes = `<p>${posts[0].likes} likes</p>`
+    numberOfLikes.innerHTML = "";
     likes = `<p>${posts[1].likes} likes</p>`
-    likes2El.innerHTML = likes;
+    likesEl.innerHTML = "";
     comments =`<span><p><strong>${posts[1].name}</strong> ${posts[1].comment}</p></span>`;
     text2El.innerHTML = comments;
     likes = `<p>${posts[2].likes} likes</p>`
-    likes3El.innerHTML = likes;
+    likes2El.innerHTML = "";
     comments =`<span><p><strong>${posts[2].name}</strong> ${posts[2].comment}</p></span>`;
     text3El.innerHTML = comments;
 }
+let count = 0;
+heart.addEventListener("click", function(){
+      count++;
+        numberOfLikes.innerHTML = `${count} likes`;
+})
+
+let countTwo= 0;
+heart2.addEventListener("click", function(){
+    countTwo++;
+    likesEl.innerHTML = `${countTwo} likes`
+})
+
+let countThree = 0;
+heart3.addEventListener("click", function(){
+    countThree++;
+    likes2El.innerHTML = `${countThree} likes`
+})
 allImages();
 member();
+
