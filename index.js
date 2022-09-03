@@ -41,13 +41,13 @@ let countryEl = document.getElementById("country")
 let numberOfLikes = document.getElementById("likes");
 let textEl = document.getElementById("txt");
 let sectionTwoEl = document.getElementById("section-two");
-let countryTwoEl = document.getElementById("country-two")
+let countryTwoEl = document.getElementById("country-two");
+let likes2El = document.getElementById("likes-2");
+let text2El = document.getElementById("txt-2")
 let name = "";
 let nation = ""
 let likes = "";
 let comments= "";
-let name2 = "";
-let nation2 = "";
 function member(){  
     for(let i = 0; i < posts.length; i++){
       name = `<h2>${posts[0].name}</h2>`
@@ -58,10 +58,14 @@ function member(){
      numberOfLikes.innerHTML = likes;
      comments = `<span><p><strong>${posts[0].name}</strong> ${posts[0].comment}</p></span>`
      textEl.innerHTML = comments;
-     name2 = `<h2>${posts[1].name}</h1>`;
-     sectionTwoEl.innerHTML = name2;
-     nation2 = `<p>${posts[1].location}</p>`
-     countryTwoEl.innerHTML = nation2;
+     name = `<h2>${posts[1].name}</h1>`;
+     sectionTwoEl.innerHTML = name;
+     nation = `<p>${posts[1].location}</p>`
+     countryTwoEl.innerHTML = nation;
+     likes = `<p>${posts[1].likes} likes</p>`
+     likes2El.innerHTML = likes;
+     comments =`<span><p><strong>${posts[1].name}</strong> ${posts[1].comment}</p></span>`;
+     text2El.innerHTML = comments;
     }
 }
 
