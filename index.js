@@ -41,6 +41,7 @@ let nation = ""
 let likes = "";
 let comments= "";
 let name2 = "";
+let nation2 = "";
 function member(){  
     for(let i = 0; i < posts.length; i++){
       name = `<h2>${posts[0].name}</h2>`
@@ -51,9 +52,10 @@ function member(){
      numberOfLikes.innerHTML = likes;
      comments = `<span><p><strong>${posts[0].name}</strong> ${posts[0].comment}</p></span>`
      textEl.innerHTML = comments;
-     name2 = `<h2>${posts[1].name}`;
+     name2 = `<h2>${posts[1].name}</h1>`;
      sectionTwoEl.innerHTML = name2;
-
+     nation2 = `<p>${posts[1].location}</p>`
+     countryTwoEl.innerHTML = nation2;
     }
 }
 
@@ -64,7 +66,8 @@ function allImages(){
     document.getElementById("avartar-two").src = `${posts[0].avatar}`
     document.getElementById("post-one").src = `${posts[0].post}`
     document.getElementById("avartar-three").src = `${posts[1].avatar}`
-    member()
+    document.getElementById("post-two").src = `${posts[1].post}`
+    member();
 }
 allImages();
 member();
