@@ -34,12 +34,14 @@ let sectionEl = document.getElementById("section")
 let countryEl = document.getElementById("country")
 let numberOfLikes = document.getElementById("likes");
 let textEl = document.getElementById("txt");
+let sectionTwoEl = document.getElementById("section-two");
+let countryTwoEl = document.getElementById("country-two")
 let name = "";
 let nation = ""
 let likes = "";
-let comments= ""
-function member(){
-        
+let comments= "";
+let name2 = "";
+function member(){  
     for(let i = 0; i < posts.length; i++){
       name = `<h2>${posts[0].name}</h2>`
      sectionEl.innerHTML = name;
@@ -49,6 +51,8 @@ function member(){
      numberOfLikes.innerHTML = likes;
      comments = `<span><p><strong>${posts[0].name}</strong> ${posts[0].comment}</p></span>`
      textEl.innerHTML = comments;
+     name2 = `<h2>${posts[1].name}`;
+     sectionTwoEl.innerHTML = name2;
 
     }
 }
@@ -59,6 +63,7 @@ function allImages(){
     document.getElementById("dm-icon").src = `${posts[0]["dm-icon"]}`
     document.getElementById("avartar-two").src = `${posts[0].avatar}`
     document.getElementById("post-one").src = `${posts[0].post}`
+    document.getElementById("avartar-three").src = `${posts[1].avatar}`
     member()
 }
 allImages();
