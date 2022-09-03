@@ -54,18 +54,11 @@ function member(){
      sectionEl.innerHTML = name;
       nation = `<p>${posts[0].location}</p>`
      countryEl.innerHTML = nation;
-     likes = `<p>${posts[0].likes} likes</p>`
-     numberOfLikes.innerHTML = likes;
-     comments = `<span><p><strong>${posts[0].name}</strong> ${posts[0].comment}</p></span>`
-     textEl.innerHTML = comments;
      name = `<h2>${posts[1].name}</h1>`;
      sectionTwoEl.innerHTML = name;
      nation = `<p>${posts[1].location}</p>`
      countryTwoEl.innerHTML = nation;
-     likes = `<p>${posts[1].likes} likes</p>`
-     likes2El.innerHTML = likes;
-     comments =`<span><p><strong>${posts[1].name}</strong> ${posts[1].comment}</p></span>`;
-     text2El.innerHTML = comments;
+    likeComment();
     }
 }
 
@@ -81,6 +74,16 @@ function allImages(){
     document.getElementById("comment2-icon").src = `${posts[0]["comment-icon"]}`
     document.getElementById("dm2-icon").src = `${posts[0]["dm-icon"]}`;
     member();
+}
+function likeComment(){
+    likes = `<p>${posts[1].likes} likes</p>`
+    likes2El.innerHTML = likes;
+    comments =`<span><p><strong>${posts[1].name}</strong> ${posts[1].comment}</p></span>`;
+    text2El.innerHTML = comments;
+    likes = `<p>${posts[0].likes} likes</p>`
+    numberOfLikes.innerHTML = likes;
+    comments = `<span><p><strong>${posts[0].name}</strong> ${posts[0].comment}</p></span>`
+    textEl.innerHTML = comments;
 }
 allImages();
 member();
