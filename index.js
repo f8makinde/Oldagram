@@ -44,6 +44,8 @@ let sectionTwoEl = document.getElementById("section-two");
 let countryTwoEl = document.getElementById("country-two");
 let likes2El = document.getElementById("likes-2");
 let text2El = document.getElementById("txt-2")
+let sectionThreeEl = document.getElementById("section-three");
+let countryThreeEl = document.getElementById("country-three");
 let name = "";
 let nation = ""
 let likes = "";
@@ -58,6 +60,10 @@ function member(){
      sectionTwoEl.innerHTML = name;
      nation = `<p>${posts[1].location}</p>`
      countryTwoEl.innerHTML = nation;
+    name = `<h2>${posts[2].name}</h1>`;
+    sectionThreeEl.innerHTML = name;
+    nation = `<p>${posts[2].location}</p>`
+    countryThreeEl.innerHTML = nation;
     likeComment();
     }
 }
@@ -73,6 +79,7 @@ function allImages(){
     document.getElementById("heart2-icon").src = `${posts[1]["heart-icon"]}`
     document.getElementById("comment2-icon").src = `${posts[0]["comment-icon"]}`
     document.getElementById("dm2-icon").src = `${posts[0]["dm-icon"]}`;
+    document.getElementById("avartar-four").src = `${posts[2].avatar}`
     member();
 }
 function likeComment(){

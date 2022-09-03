@@ -21,16 +21,16 @@ header{
     border-bottom: 1px solid rgba(198, 198, 198, 1);
     margin-bottom: 11px;
 }
-#avartar-two, #avartar-three{
+#avartar-two, #avartar-three, #avartar-four{
  height: 34px;
  width: 34px;
  border-radius: 50%;
 }
-#section, #section-two{
+#section, #section-two, #section-three{
     font-size: 13px;
     margin: 0;
 }
-#country, #country-two{
+#country, #country-two, #country-three{
     font-size: 12px;
     margin: 0;
     margin-top: -30px;
@@ -60,6 +60,6 @@ header{
     height: 20px;
 width: 20x;
 }
-.container-two{
+.container-two, .container-three{
     margin-top: 200px;
 }
