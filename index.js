@@ -32,18 +32,27 @@ const posts = [
 ]
 let sectionEl = document.getElementById("section")
 let countryEl = document.getElementById("country")
+let numberOfLikes = document.getElementById("likes");
+let textEl = document.getElementById("txt");
 let name = "";
 let nation = ""
+let likes = "";
+let comments= ""
 function member(){
+        
     for(let i = 0; i < posts.length; i++){
-      name = `<h2>${posts[0].name}<h2>`
+      name = `<h2>${posts[0].name}</h2>`
      sectionEl.innerHTML = name;
-      nation = `<p>${posts[0].location}`
+      nation = `<p>${posts[0].location}</p>`
      countryEl.innerHTML = nation;
+     likes = `<p>${posts[0].likes} likes</p>`
+     numberOfLikes.innerHTML = likes;
+     comments = `<span><p><strong>${posts[0].name}</strong> ${posts[0].comment}</p></span>`
+     textEl.innerHTML = comments;
 
     }
 }
-member();
+
 function allImages(){
     document.getElementById("heart-icon").src = `${posts[0]["heart-icon"]}`
     document.getElementById("comment-icon").src = `${posts[0]["comment-icon"]}`
@@ -53,3 +62,5 @@ function allImages(){
     member()
 }
 allImages();
+member();
+
