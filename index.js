@@ -46,6 +46,8 @@ let likes2El = document.getElementById("likes-2");
 let text2El = document.getElementById("txt-2")
 let sectionThreeEl = document.getElementById("section-three");
 let countryThreeEl = document.getElementById("country-three");
+let likes3El = document.getElementById("likes-3");
+let text3El = document.getElementById("txt-3")
 let name = "";
 let nation = ""
 let likes = "";
@@ -87,14 +89,18 @@ function allImages(){
     member();
 }
 function likeComment(){
-    likes = `<p>${posts[1].likes} likes</p>`
-    likes2El.innerHTML = likes;
-    comments =`<span><p><strong>${posts[1].name}</strong> ${posts[1].comment}</p></span>`;
-    text2El.innerHTML = comments;
     likes = `<p>${posts[0].likes} likes</p>`
     numberOfLikes.innerHTML = likes;
     comments = `<span><p><strong>${posts[0].name}</strong> ${posts[0].comment}</p></span>`
     textEl.innerHTML = comments;
+    likes = `<p>${posts[1].likes} likes</p>`
+    likes2El.innerHTML = likes;
+    comments =`<span><p><strong>${posts[1].name}</strong> ${posts[1].comment}</p></span>`;
+    text2El.innerHTML = comments;
+    likes = `<p>${posts[2].likes} likes</p>`
+    likes3El.innerHTML = likes;
+    comments =`<span><p><strong>${posts[2].name}</strong> ${posts[2].comment}</p></span>`;
+    text3El.innerHTML = comments;
 }
 allImages();
 member();
