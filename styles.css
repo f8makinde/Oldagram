@@ -1,0 +1,16 @@
+
+
+.logo{
+    width: 127px;
+}
+.my-avartar{
+    height: 60px;
+width: 60px;
+border-radius: 50%;
+
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(198, 198, 198, 1);
+}
