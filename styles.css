@@ -1,4 +1,6 @@
-
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
 .logo{
     width: 127px;
@@ -13,4 +15,21 @@ header{
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid rgba(198, 198, 198, 1);
+}
+#avartar{
+    width: 200px;
+    object-fit: contain;
+}
+#avartar-two{
+ height: 34px;
+ width: 34px;
+ border-radius: 50%;
+}
+#section{
+    font-size: 13px;
+    line-height: 16px;
+}
+#country{
+    font-size: 12px;
+    line-height: 16px;
 }

@@ -28,11 +28,17 @@ const posts = [
     }
 ]
 let sectionEl = document.getElementById("section")
+let countryEl = document.getElementById("country")
+let name = "";
+let nation = ""
 function member(){
     for(let i = 0; i < posts.length; i++){
-     
-     let name = `<h2>${posts[0].name}<h2>`
+        let avatarEl = document.getElementById("avartar-two").src = `${posts[0].avatar}`
+        avatarEl.innerHTML = avatarEl;
+      name = `<h2>${posts[0].name}<h2>`
      sectionEl.innerHTML = name;
+      nation = `<p>${posts[0].location}`
+     countryEl.innerHTML = nation;
     }
 }
 member();
