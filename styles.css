@@ -38,7 +38,12 @@ header{
 #post-one{
     height: 375px;
    width: 375px;
- 
+  margin: 0;
+}
+#post-two{
+    height: 375px;
+    width: 375px; 
+    margin: 0;
 }
 .container{
     background:rgba(255, 255, 255, 1);
