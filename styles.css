@@ -27,9 +27,16 @@ header{
 }
 #section{
     font-size: 13px;
-    line-height: 16px;
+    margin: 0;
 }
 #country{
     font-size: 12px;
-    line-height: 16px;
+    margin: 0;
+    margin-top: -10px;
+  
+
+}
+#post-one{
+    height: 375px;
+   width: 375px;
 }

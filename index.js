@@ -6,7 +6,10 @@ const posts = [
         avatar: "images/avatar-vangogh.jpg",
         post: "images/post-vangogh.jpg",
         comment: "just took a few mushrooms lol",
-        likes: 21
+        likes: 21,
+        "heart-icon": "images/icon-heart.png",
+        "comment-icon": "images/icon-comment.png",
+        "dm-icon": "images/icon-dm.png"
     },
     {
         name: "Gustave Courbet",
@@ -33,12 +36,20 @@ let name = "";
 let nation = ""
 function member(){
     for(let i = 0; i < posts.length; i++){
-        let avatarEl = document.getElementById("avartar-two").src = `${posts[0].avatar}`
-        avatarEl.innerHTML = avatarEl;
       name = `<h2>${posts[0].name}<h2>`
      sectionEl.innerHTML = name;
       nation = `<p>${posts[0].location}`
      countryEl.innerHTML = nation;
+
     }
 }
 member();
+function allImages(){
+    document.getElementById("heart-icon").src = `${posts[0]["heart-icon"]}`
+    document.getElementById("comment-icon").src = `${posts[0]["comment-icon"]}`
+    document.getElementById("dm-icon").src = `${posts[0]["dm-icon"]}`
+    document.getElementById("avartar-two").src = `${posts[0].avatar}`
+    document.getElementById("post-one").src = `${posts[0].post}`
+    member()
+}
+allImages();
