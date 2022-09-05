@@ -48,7 +48,8 @@ let sectionThreeEl = document.getElementById("section-three");
 let countryThreeEl = document.getElementById("country-three");
  let heart = document.getElementById("heart-icon")
  let heart2 = document.getElementById("heart2-icon");
- let heart3 = document.getElementById("heart3-icon")
+ let heart3 = document.getElementById("heart3-icon");
+ let commentEl = document.getElementById("comment-icon")
 let likes2El = document.getElementById("likes-3");
 let text3El = document.getElementById("txt-3")
 let name = "";
@@ -105,6 +106,7 @@ function likeComment(){
     comments =`<span><p><strong>${posts[2].name}</strong> ${posts[2].comment}</p></span>`;
     text3El.innerHTML = comments;
 }
+
 let count = 0;
 heart.addEventListener("click", function(){
       count++;
@@ -122,6 +124,7 @@ heart3.addEventListener("click", function(){
     countThree++;
     likes2El.innerHTML = `${countThree} likes`
 })
+
 allImages();
 member();
 

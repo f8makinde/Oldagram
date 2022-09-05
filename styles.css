@@ -53,6 +53,10 @@ header{
     width: 23px;   
     margin-right: 20px;
 }
+/* #heart-icon:hover, #heart2-icon:hover, #heart3-icon:hover{
+    background: rgb(250, 105, 129);
+
+} */
 #comment-icon, #comment2-icon, #comment3-icon{
     height: 20px;
    width: 20px;
