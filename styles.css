@@ -1,11 +1,7 @@
 body{
     font-family: 'Source Sans Pro', sans-serif;
     height: 100vh;
-}
-section{
-    display: flex;
-    flex-direction: column;
-    margin-top: -30px;  
+    /* max-width: 600px; */
 }
 .first{
     display: flex;
@@ -33,9 +29,15 @@ header{
 #section, #section-two, #section-three{
     font-size: 13px;
 }
-#country, #country-two, #country-three{
+#country-two{
     font-size: 12px; 
-     margin-top: -40px;
+     margin-left: -132px;
+     margin-top: 10px;
+}
+#country-three{
+    font-size: 12px; 
+    margin-left: -130px;
+    margin-top: 10px;   
 }
 #post-one, #post-two, #post-three{
     height: 375px;
@@ -53,10 +55,6 @@ header{
     width: 23px;   
     margin-right: 20px;
 }
-/* #heart-icon:hover, #heart2-icon:hover, #heart3-icon:hover{
-    background: rgb(250, 105, 129);
-
-} */
 #comment-icon, #comment2-icon, #comment3-icon{
     height: 20px;
    width: 20px;
@@ -68,4 +66,23 @@ width: 20x;
 }
 .container-two, .container-three{
     margin-top: 200px;
+}
+/* section{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto; 
+} */
+.my-profile{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+h2{
+   margin-top: -2px;
+    margin-left: 2px;
+}
+#country{
+    font-size: 12px; 
+    margin-left: -140px;
+    margin-top: 6px;
 }
